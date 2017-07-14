@@ -130,7 +130,9 @@ deployment_targets:
   staging:
     target: MyGreatAppTarget # Name of the build target. Optional, defaults to app name.
     #scheme: MyGreatAppScheme # Replace target with scheme if using a workspace
+    app_name: My Great App Flavor 1
     build_configuration: Release
+    distribution_certificate: 'Name of Distribution Signing Certificate'
     provisioning_search_query: 'query to find Provisioning Profile' # Otherwise, it will use the first provisioning profile in ~/Library/MobileDevice/Provisioning Profiles/
     versioning_method: 'none' # or 'timestamp-sha' or 'commits'. Leave blank to use Git commit SHAs for build numbers.
     tag: ci # Deploys latest commit with the tag. Leave blank to deploy from master.

@@ -5,7 +5,9 @@ module Thrust
                 :provisioning_search_query,
                 :scheme,
                 :target,
+                :app_name,
                 :note_generation_method,
+                :distribution_certificate,
                 :notify,
                 :versioning_method,
                 :tag
@@ -16,7 +18,9 @@ module Thrust
       @provisioning_search_query = attributes['provisioning_search_query']
       @scheme = attributes['scheme']
       @target = attributes['target']
+      @app_name = attributes['app_name']
       @note_generation_method = attributes['note_generation_method']
+      @distribution_certificate = attributes['distribution_certificate']
       @notify = attributes['notify']
       @versioning_method = attributes['versioning_method']
       @tag = attributes['tag']
